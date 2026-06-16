@@ -1,0 +1,8 @@
+{
+    "id": "player_guide",
+    "name": "Controls Guide",
+    "version": "1.0.0",
+    "screen": "screen.html",
+    "script": "screen.js",
+    "tour": "tour.json"
+}

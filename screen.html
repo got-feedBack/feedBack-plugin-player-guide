@@ -1,0 +1,171 @@
+<div class="min-h-screen bg-dark-900 text-gray-200 pt-20 pb-12 px-6">
+    <div class="max-w-4xl mx-auto">
+
+        <!-- Header -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-10">
+            <div>
+                <h2 class="text-3xl font-bold text-white">Player Controls</h2>
+                <p class="text-gray-500 mt-1">Everything in the playback bar, explained.</p>
+            </div>
+            <button id="pg-tour-btn-screen"
+                class="flex items-center gap-2 px-5 py-2.5 bg-accent hover:bg-accent-light rounded-xl text-sm font-semibold text-white transition shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                Take the Tour
+            </button>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            <!-- Playback -->
+            <div class="bg-dark-800 border border-gray-800 rounded-xl p-5">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg">▶</span>
+                    <h3 class="font-semibold text-white">Playback</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">Start and stop the song, or jump by five seconds.</p>
+                <div class="space-y-2 text-xs">
+                    <div class="flex items-start gap-2">
+                        <kbd class="px-2 py-0.5 bg-dark-600 rounded text-gray-300 shrink-0">⏪ 5s</kbd>
+                        <span class="text-gray-500">Seek back five seconds</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <kbd class="px-2 py-0.5 bg-dark-600 rounded text-gray-300 shrink-0">▶ Play</kbd>
+                        <span class="text-gray-500">Toggle play / pause</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <kbd class="px-2 py-0.5 bg-dark-600 rounded text-gray-300 shrink-0">5s ⏩</kbd>
+                        <span class="text-gray-500">Seek forward five seconds</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Arrangement -->
+            <div class="bg-dark-800 border border-gray-800 rounded-xl p-5">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg">🎸</span>
+                    <h3 class="font-semibold text-white">Arrangement</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">
+                    Switch between the parts available for this song — Lead, Rhythm, Bass, and Vocals.
+                    Each has its own note chart and difficulty curve.
+                </p>
+                <p class="text-xs text-gray-600">Not all songs include every part.</p>
+            </div>
+
+            <!-- Speed -->
+            <div class="bg-dark-800 border border-gray-800 rounded-xl p-5">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg">🐢</span>
+                    <h3 class="font-semibold text-white">Playback Speed</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">
+                    Drag the slider to slow the song down — all the way to 25 % for the trickiest passages.
+                    The audio pitch is preserved so your ears don't suffer.
+                </p>
+                <div class="flex items-center gap-3 text-xs text-gray-600">
+                    <span>25 %</span>
+                    <div class="flex-1 h-1 bg-dark-600 rounded"></div>
+                    <span>150 %</span>
+                </div>
+            </div>
+
+            <!-- Difficulty -->
+            <div class="bg-dark-800 border border-gray-800 rounded-xl p-5">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg">🎯</span>
+                    <h3 class="font-semibold text-white">Difficulty</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">
+                    Filters out harder notes at lower values, showing you a simplified version of the chart.
+                    Great for beginners or when learning a new song one section at a time.
+                </p>
+                <div class="flex items-center gap-3 text-xs text-gray-600">
+                    <span>Simplified</span>
+                    <div class="flex-1 h-1 bg-dark-600 rounded"></div>
+                    <span>Full chart</span>
+                </div>
+            </div>
+
+            <!-- Mixer -->
+            <div class="bg-dark-800 border border-gray-800 rounded-xl p-5">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg">🎚️</span>
+                    <h3 class="font-semibold text-white">Stem Mixer</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">
+                    Click <strong class="text-gray-300">Stem Mixer</strong> to open per-stem volume sliders.
+                    Available stems depend on the song — typically guitar, bass, drums, and vocals.
+                </p>
+                <p class="text-xs text-gray-600">Tip: duck the guitar to 0 % and practice against the backing track.</p>
+            </div>
+
+            <!-- Lyrics -->
+            <div class="bg-dark-800 border border-gray-800 rounded-xl p-5">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg">🎤</span>
+                    <h3 class="font-semibold text-white">Lyrics</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">
+                    Toggles a lyrics overlay on the highway. Only visible when the Lyrics Sync plugin
+                    has generated a lyric track for this song.
+                </p>
+                <p class="text-xs text-gray-600">Button is greyed out when no lyrics are available.</p>
+            </div>
+
+            <!-- Visualization & Quality -->
+            <div class="bg-dark-800 border border-gray-800 rounded-xl p-5">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg">🖥️</span>
+                    <h3 class="font-semibold text-white">Visualization &amp; Quality</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">
+                    <strong class="text-gray-300">Visualization</strong> swaps the renderer — Default (2D highway),
+                    Auto (matches the arrangement type), or any installed viz plugin such as 3D Highway.
+                </p>
+                <p class="text-sm text-gray-400">
+                    <strong class="text-gray-300">Quality</strong> scales the canvas render resolution.
+                    Drop to Medium or Low if the highway feels sluggish.
+                </p>
+            </div>
+
+            <!-- Loop -->
+            <div class="bg-dark-800 border border-gray-800 rounded-xl p-5">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg">🔁</span>
+                    <h3 class="font-semibold text-white">A / B Loop</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">Mark a section to repeat endlessly:</p>
+                <div class="space-y-2 text-xs">
+                    <div class="flex items-start gap-2">
+                        <kbd class="px-2 py-0.5 bg-dark-600 rounded text-gray-300 shrink-0">A</kbd>
+                        <span class="text-gray-500">Set loop start at the current position</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <kbd class="px-2 py-0.5 bg-dark-600 rounded text-gray-300 shrink-0">B</kbd>
+                        <span class="text-gray-500">Set loop end — playback now loops A → B</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <kbd class="px-2 py-0.5 bg-dark-600 rounded text-gray-300 shrink-0">Save</kbd>
+                        <span class="text-gray-500">Name and store this loop for later</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <kbd class="px-2 py-0.5 bg-dark-600 rounded text-gray-300 shrink-0">✕ Clear</kbd>
+                        <span class="text-gray-500">Remove the current loop markers</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer hint -->
+        <p class="text-center text-xs text-gray-700 mt-10">
+            Click <strong class="text-gray-600">Take the Tour</strong> above for an interactive walkthrough directly on the player.
+        </p>
+    </div>
+</div>

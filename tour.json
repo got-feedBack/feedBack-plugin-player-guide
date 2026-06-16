@@ -1,0 +1,75 @@
+{
+    "version": 1,
+    "tour": [
+        {
+            "id": "intro",
+            "title": "Player Controls",
+            "content": "Let's walk through every control in the player bar. Use Next to step through each group.",
+            "shape": "bubble",
+            "position": "auto"
+        },
+        {
+            "id": "playback",
+            "selector": "#btn-play",
+            "title": "Playback",
+            "content": "Play / Pause the song. The ⏪ 5s and 5s ⏩ buttons jump back or forward five seconds — useful for repeating a tricky riff.",
+            "shape": "spotlight",
+            "position": "top"
+        },
+        {
+            "id": "arrangement",
+            "selector": "#arr-select",
+            "title": "Arrangement",
+            "content": "Switch between Lead, Rhythm, Bass, and Vocals arrangements. Each has its own note chart and difficulty.",
+            "shape": "spotlight",
+            "position": "top"
+        },
+        {
+            "id": "speed",
+            "selector": "#speed-slider",
+            "title": "Playback Speed",
+            "content": "Slow the song down to as little as 25 % to nail a fast run, then ramp back up to 100 % when you’re ready.",
+            "shape": "spotlight",
+            "position": "top"
+        },
+        {
+            "id": "difficulty",
+            "selector": "#mastery-slider",
+            "title": "Difficulty",
+            "content": "Filters out the hardest notes at lower values — great for beginners or when learning a new song section by section.",
+            "shape": "spotlight",
+            "position": "top"
+        },
+        {
+            "id": "mixer",
+            "selector": "#btn-stem-mixer",
+            "title": "Stem Mixer",
+            "content": "Click <b>Stem Mixer</b> to open per-stem volume sliders — guitar, bass, vocals, drums. Duck the guitar to 0 % to practice against the backing track.",
+            "shape": "spotlight",
+            "position": "top"
+        },
+        {
+            "id": "viz",
+            "selector": "#viz-picker",
+            "title": "Visualization",
+            "content": "Swap the note highway renderer: <b>Auto</b> matches the arrangement type (guitar/bass/keys/vocals each get their own layout), <b>Highway</b> is the classic 2D scrolling view, and <b>3D Highway</b> gives a full 3D perspective. Any additional installed viz plugins appear here too. The <b>Quality</b> dropdown (HD / Medium / Low) scales the render resolution — drop it if the highway feels slow.",
+            "shape": "bubble",
+            "position": "top"
+        },
+        {
+            "id": "loop",
+            "selector": "#btn-loop-a",
+            "title": "A / B Loop",
+            "content": "Press A at your loop start, B at the end — the song repeats that section indefinitely. Hit Save to name and store the loop for later.",
+            "shape": "spotlight",
+            "position": "top"
+        },
+        {
+            "id": "outro",
+            "title": "That’s everything",
+            "content": "You can revisit this guide any time from Controls in the nav, or click  ?  on this screen to run the tour again.",
+            "shape": "bubble",
+            "position": "auto"
+        }
+    ]
+}
