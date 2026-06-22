@@ -1,8 +1,11 @@
 {
-    "id": "player_guide",
-    "name": "Controls Guide",
-    "version": "1.0.0",
-    "screen": "screen.html",
-    "script": "screen.js",
-    "tour": "tour.json"
+  "id": "player_guide",
+  "name": "Controls Guide",
+  "version": "1.0.0",
+  "screen": "screen.html",
+  "script": "screen.js",
+  "tour": "tour.json",
+  "category": "practice",
+  "description": "In-app player guide and onboarding tips.",
+  "icon": "assets/thumb.svg"
 }
